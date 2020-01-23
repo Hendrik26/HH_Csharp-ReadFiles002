@@ -35,6 +35,14 @@ namespace HH_Csharp_ReadFiles002
             {
                 textBox1.Text += line + Environment.NewLine;
             }
+            streamReader.Close(); // destructor
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StreamWriter streamWriter = File.CreateText(fileName);
+            foreach (string s in textBox1.Lines) streamWriter.WriteLine(s);
+            streamWriter.Close(); // destructor
         }
     }
 }
