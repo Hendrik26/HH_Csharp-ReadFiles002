@@ -28,7 +28,7 @@ namespace HH_Csharp_ReadFiles002
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox1.Text = string.Empty;
+            textBox1.Text = string.Empty; ///////
             StreamReader streamReader = File.OpenText(fileName);
             string line = string.Empty;
             while ((line = streamReader.ReadLine()) != null)
