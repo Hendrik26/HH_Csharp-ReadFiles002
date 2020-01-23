@@ -12,6 +12,9 @@ namespace HH_Csharp_ReadFiles002
 {
     public partial class Form1 : Form
     {
+            
+        const string fileName = "..\\..\\..\\Beispiel.txt";
+
         public Form1()
         {
             InitializeComponent();
